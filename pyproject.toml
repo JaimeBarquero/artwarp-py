@@ -1,0 +1,43 @@
+[project]
+name = "dtw-evaluation"
+version = "0.0.1"
+description = "Evaluator to compare different DTW algorithms to implement in artwarp-py"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    {name = "Jaime Barquero Cebrian", email = "barquero.jaime6@gmail.com"},
+]
+maintainers = [
+    {name = "Jaime Barquero Cebrian"},
+]
+dependencies = [
+    "numba>=0.54.0",
+    "numpy>=1.21.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-check>=2.0",
+    "black>=22.0.0",
+    "isort>=5.10.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-v --tb=short --strict-markers"
