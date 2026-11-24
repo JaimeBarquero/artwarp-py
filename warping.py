@@ -130,7 +130,7 @@ def distort(freq, anchor=None, width=None, height=None, shift=None, seed=None):
     Returns:
         distorted (array, float): array of distorted frequencies
         key (array, float): same format as DTW's warp_function.
-            Used to find where the each old frequency is with respect to new frequencies.
+            Used to find where each old frequency is with respect to new frequencies.
         report (dictionary): anchor, width, height, shift, slopes, seed, redrawn
     """
     if seed is None:
