@@ -22,7 +22,10 @@ dev = [
     "pytest-check>=2.0",
     "black>=22.0.0",
     "isort>=5.10.0",
+    "matplotlib>=3.7.5",
 ]
+[tool.uv]
+constraint-dependencies = ["fonttools!=4.69.0"]
 
 [tool.black]
 line-length = 100

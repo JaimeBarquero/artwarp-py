@@ -12,7 +12,7 @@ from dtw import dynamic_time_warp
 
 def ev_al(og_contour, anchor=None, width=None, height=None, shift=None, seed=None):
     """
-    Evaluates match, warp %, error % and Max Error of two contours
+    Evaluates match %, warp %, error % and Max Error of two contours
 
     Parameters:
         og_contour (array, float): array of frequencies of a contour
